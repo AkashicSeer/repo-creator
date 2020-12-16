@@ -39,7 +39,7 @@ if [ "$lastCheck" = "y" ] || [ "$lastCheck" = "Y" ]
 
 	git remote add origin "$gitRepo"
 	echo "Pushing to remote repo -->$gitRepo"
-	git push -f origin "$repoBranch"
+	git push -u -f origin "$repoBranch"
 else
        if [ "$lastCheck" = "n" ] || [ "$lastCheck" = "N" ]
        then 
