@@ -1,5 +1,13 @@
 # repo-creator
-This script creates local repositories from existing code and pushes to a remote repository. It changes to the directory you tell it to
+***WARNING***
+Use this only with new, empty, remote repositories. This will overwrite all
+code in that repository. This is strictly for pushing existing code to a 
+**NEW REMOTE REPOSITORY"** 
+
+If your local code directory contains a .git directory rm -r remove it before 
+using this script. This script creates the local repo for your code calling git init 
+
+This script creates local repositories from existing code and pushes to a remoterepository. It changes to the directory you tell it to
 and runs git init, then adds the files, then commits them by asking you for a comment, it then pushes the files to the remote repo you list. 
 As it pushes it attempts to set the git upstream origin info so the next time you push it just works.
 
