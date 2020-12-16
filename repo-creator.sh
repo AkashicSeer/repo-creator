@@ -24,7 +24,7 @@ if [ "$lastCheck" = "y" ] || [ "$lastCheck" = "Y" ]
 	#echo $(ls -al)
 	#initialize this directory
 	echo "XXXXXinitializing repo in $gitDir XXXXX"
-	git init -b main
+	git init -b "$repoBranch"
 	#add the files
 	git add .
 	read -p "Add a commit comment ->" cc
